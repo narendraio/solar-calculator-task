@@ -116,6 +116,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Calculation Entry": {
+        "before_save": "test_narendra.calculation_entry.calculation_entry.CalculationEntry"
+    }
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -213,3 +218,9 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"test_narendra.auth.validate"
 # ]
+
+doc_events = {
+    "Calculation Entry": {
+        "before_save": "test_narendra.calculation_entry.calculation_entry.before_save"
+    }
+}
